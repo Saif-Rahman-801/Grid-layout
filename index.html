@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid</title>
+    <style>
+        .grid-container> *{
+            border-radius: 10px;
+            padding: 10px 10px;
+        }
+      .grid-container {
+        width: auto;
+        /* margin: 20px auto; */
+        display: grid;
+        height: 100vh;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+        gap: 10px;
+      }
+
+      .header {
+        background-color: slateblue;
+        grid-column: 1/13;
+      }
+      .nav {
+        background-color: aqua;
+       grid-column: 1/4;
+       grid-row: 2/12;
+      }
+
+      .title {
+        background-color: yellow;
+        grid-column: 4/13;
+      }
+      
+      
+      .article-one {
+        background-color: pink;
+       grid-column: 4/7;
+       grid-row: 3/12;
+      }
+      .article-two {
+        background-color: blanchedalmond;
+        grid-column: 7/10;grid-row: 3/12;
+      }
+      .article-three {
+        background-color: rgb(131, 31, 31);
+        grid-column: 10/13;grid-row: 3/12;
+      }
+      .footer {
+        background-color: rgb(133, 83, 83);
+        grid-column: 1/13;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="header">Header</div>
+      <div class="nav">Navigation</div>
+      <div class="title">Title</div>
+      <div class="article-one">Article</div>
+      <div class="article-two">Article</div>
+      <div class="article-three">Article</div>
+      <div class="footer">footer</div>
+    </div>
+  </body>
+</html>
